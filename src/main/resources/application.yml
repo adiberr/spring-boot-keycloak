@@ -1,0 +1,15 @@
+server:
+  port: 9090
+
+spring:
+  profiles:
+    active: default
+  application:
+    name: api
+
+keycloak:
+  realm: demo
+  auth-server-url: http://localhost:8080/auth
+  resource: demo-resource
+  bearer-only: true
+  cors: true
